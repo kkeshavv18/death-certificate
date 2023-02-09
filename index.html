@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--<title>Responsive Regisration Form </title>-->
+  </head>
+  <body>
+    <div class="container">
+      <header>Death Certificate</header>
+
+      <form action="#">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details of a Dead Person</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter the First Name"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input type="text" placeholder="Enter the Middle Name" />
+              </div>
+              <div class="input-field">
+                <label>Surname</label>
+                <input
+                  type="text"
+                  placeholder="Enter the Surname"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>National ID Card Number</label>
+                <input type="text" placeholder="Enter NID No." />
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select class="required" required>
+                  <option disabled selected>Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Date of Birth</label>
+                <input
+                  type="date"
+                  placeholder="Enter birth date"
+                  class="required"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Place of Death</label>
+                <select class="required" required>
+                  <option disabled selected>Select Place</option>
+                  <option>Home</option>
+                  <option>Hospital</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Is Death Registered by Doctor?</label>
+                <select class="required" required>
+                  <option disabled selected>Select one option</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Reason of Death(If Death is Registered)</label>
+                <input type="text" placeholder="Enter Reason of Death" />
+              </div>
+
+              <div class="input-field">
+                <label
+                  >Address of Death(If person died in Foreign Country)</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter Country Name and local address"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="details address">
+            <span class="title">Address of Dead Person</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Province</label>
+                <select class="required" required>
+                  <option disabled selected>Select Province</option>
+                  <option>Province no. 1</option>
+                  <option>Madhesh Pradesh</option>
+                  <option>Bagmati</option>
+                  <option>Gandaki</option>
+                  <option>Lumbini</option>
+                  <option>Karnali</option>
+                  <option>Sudurpaschim</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>VDC/Municipality</label>
+                <select class="required" required>
+                  <option disabled selected>Select VDC/Municipality</option>
+                  <option>VDC</option>
+                  <option>Municipality</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>List of VDC/Municipality</label>
+                <select class="required" required>
+                  <option disabled selected>Name of VDC/Municipality</option>
+                  <option>Amarchowk</option>
+                  <option>Damak</option>
+                  <option>Dewangung</option>
+                  <option>Gadhi</option>
+                  <option>Kamal</option>
+                  <option>Katahari</option>
+                  <option>Ratuwamai</option>
+                  <option>Urlabari</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Ward Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter ward number"
+                  class="required"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>House Number</label>
+                <input type="number" placeholder="Enter House No." />
+              </div>
+              <div class="input-field">
+                <label>Street Number</label>
+                <input type="number" placeholder="Enter Street No." />
+              </div>
+              <div class="input-field">
+                <label>Village/Tole</label>
+                <input type="textbox" placeholder="Enter Village/Tole" />
+              </div>
+            </div>
+          </div>
+
+          <div class="details additional">
+            <span class="title">Additional Details Of a Dead Person</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Citizenship Number</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Citizenship Number"
+                  class="required"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Issue Date</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Citizenship Issue Date"
+                  class="required"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Issued District</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Issued District of Citizenship"
+                  class="required"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Passport Number[If Foreign Citizen]</label>
+                <input type="textbox" placeholder="Enter Passport Number" />
+              </div>
+
+              <div class="input-field">
+                <label>Issue Date[If Foreign Citizen]</label>
+                <input type="textbox" placeholder="Enter Passport Issue Date" />
+              </div>
+
+              <div class="input-field">
+                <label>Issued Country</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Issued Country of Passport"
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Relationship Status</label>
+                <select class="required" required>
+                  <option disabled selected>Select Relationship Status</option>
+                  <option>Married</option>
+                  <option>Unmarried</option>
+                  <option>Widow/Widower</option>
+                  <option>Divorced</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Educational Qualification</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Educational Qualification"
+                />
+              </div>
+              <div class="input-field">
+                <label>Occupation</label>
+                <input type="textbox" placeholder="Enter Occupation" />
+              </div>
+              <div class="input-field">
+                <label>Religion</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Religion"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Caste</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Caste"
+                  class="required"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="nextBtn">
+            <span class="btnText">Next</span>
+            <i class="uil uil-navigator"></i>
+          </button>
+        </div>
+
+        <!-- First page of form ends here  -->
+
+        <!-- Second Page of form Starts here  -->
+
+        <div class="form second">
+          <div class="details grandfther">
+            <span class="title">Details of Grandfather</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter First Name"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input type="textbox" placeholder="Enter Middle Name" />
+              </div>
+              <div class="input-field">
+                <label>Surname</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Surname"
+                  class="required"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details father">
+            <span class="title">Details of Father</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter First Name"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input type="textbox" placeholder="Enter Middle Name" />
+              </div>
+              <div class="input-field">
+                <label>Surname</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Surname"
+                  class="required"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details mother">
+            <span class="title">Details of Mother</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter First Name"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input type="textbox" placeholder="Enter Middle Name" />
+              </div>
+              <div class="input-field">
+                <label>Surname</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Surname"
+                  class="required"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details husband/wife">
+            <span class="title">Details of Husband/Wife</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Full Name</label>
+                <input type="textbox" placeholder="Enter Full Name" />
+              </div>
+              <div class="input-field">
+                <label>Full Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Fill this if more than one husband/wife"
+                />
+              </div>
+              <div class="input-field">
+                <label>Full Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Fill this if more than one husband/wife"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="details applicant">
+            <span class="title">Details of Applicant</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter First Name"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input type="textbox" placeholder="Enter Middle Name" />
+              </div>
+              <div class="input-field">
+                <label>Surname</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Surname"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Relation With Dead Person</label>
+                <input
+                  type="textbox"
+                  placeholder="Enter Relation"
+                  class="required"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Citizenship Number (Must include if Nepali) </label>
+                <input type="textbox" placeholder="Enter Citizenship Number" />
+              </div>
+              <div class="input-field">
+                <label>Passport Number (If foreign Citizen)</label>
+                <input type="textbox" placeholder="Enter Passport Number" />
+              </div>
+              <div class="input-field">
+                <label>Name of Passport Issue Country</label>
+                <input type="taxtbox" placeholder="Enter Country Name" />
+              </div>
+
+              <div class="input-field">
+                <label>Date of Application Submission</label>
+                <input type="date" class="current-date" readonly />
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <div class="backBtn">
+              <i class="uil uil-navigator"></i>
+              <span class="btnText">Back</span>
+            </div>
+
+            <button type="submit" class="sumbit">
+              <span class="btnText">Submit</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Second page contants ends here  -->
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
